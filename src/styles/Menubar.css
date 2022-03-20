@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Sansita+Swashed:wght@500;600;700;800&display=swap');
 
-.menu-area{
-    border-bottom: 2px solid #1b85a0;
-}
 .menu-container{
     margin: 0 40px;
 }
 .menu-logo img{
-    width: 160px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
 }
 .menu-items a{
     margin: 5px 15px;
     text-decoration: none;
     color: #272727;
     font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.5s ease-in-out;
 
 }
 .menu-items a:hover{

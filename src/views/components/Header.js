@@ -1,24 +1,26 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import headerOne from '../../assestes/img/header-1.png';
-
+import headerImg from '../../assestes/img/header-1.png';
+import '../../styles/Header.css';
+import '../../styles/customeBtn.css';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
-        <Carousel>
-                <div>
-                    <img src={headerOne} alt="" />
-                    <p className="legend">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur dolores molestias laudantium quidem officia eligendi laborum quae et officiis voluptatum. Tenetur debitis molestias explicabo deserunt est facilis quam totam eius dolorem sit beatae cumque saepe enim consequuntur architecto a delectus asperiores, corporis expedita veniam neque laudantium reprehenderit eaque? Voluptatibus, dolorum?</p>
+        <div className='header-area'>
+            <div className="header-container">
+                <div className="header-content">
+                    <div className="header-text">
+                        <h1>We are a reliable  <br /> partner</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eligendi modi laborum enim minus numquam!</p>
+                        <div className='custome-btn'>
+                            <Link to="/doctor"><button>Find Doctor</button></Link>
+                        </div>
+                    </div>
+                    <div className="header-img">
+                        <img src={headerImg} alt="" />
+                    </div>
                 </div>
-                <div>
-                    {/* <img src="assets/2.jpeg" /> */}
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    {/* <img src="assets/3.jpeg" /> */}
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel>
+            </div>
+        </div>
     );
 };
 

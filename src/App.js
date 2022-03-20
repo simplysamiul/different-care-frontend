@@ -3,6 +3,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Footer from "./views/components/shared/Footer";
 import Menubar from "./views/components/shared/Menubar";
 import Home from "./views/pages/Home";
 
@@ -19,6 +20,7 @@ function App() {
               <Home />
           </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
